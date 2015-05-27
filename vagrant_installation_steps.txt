@@ -24,7 +24,9 @@ vagrant box list
 
 vagrant status
 
-# Copy Vagrantfile
+# Copy Vagrantfile or Clone this repo
+# git clone https://github.com/vhosakot/Vagrant-DevStack-Ubuntu-libvirt.git
+# cd Vagrant-DevStack-Ubuntu-libvirt
 vagrant up --provider=libvirt
 
 # SSH into Ubuntu DevStack VM created by Vagrant
