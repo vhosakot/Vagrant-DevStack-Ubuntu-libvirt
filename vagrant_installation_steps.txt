@@ -4,8 +4,7 @@
 ###############################################################
 
 # Install libvirt and required packages
-sudo apt-get -y install wget libvirt-dev qemu-kvm libvirt-bin
-ubuntu-vm-builder bridge-utils libxslt-dev libxml2-dev git git-review
+sudo apt-get -y install wget libvirt-dev qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils libxslt-dev libxml2-dev git git-review
 
 wget https://releases.hashicorp.com/vagrant/1.8.1/vagrant_1.8.1_x86_64.deb
 
@@ -13,8 +12,7 @@ sudo dpkg -i vagrant_1.8.1_x86_64.deb
 
 vagrant plugin install vagrant-libvirt vagrant-mutate vagrant-rekey-ssh
 
-vagrant box add trusty64
-https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/14.04/providers/virtualbox.box
+vagrant box add trusty64 https://vagrantcloud.com/ubuntu/boxes/trusty64/versions/14.04/providers/virtualbox.box
 
 vagrant mutate trusty64  libvirt
 
